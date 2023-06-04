@@ -124,7 +124,7 @@ end)
 ]]
 Tab1:Button("Building Grid", "makes a platform so you dont have to build scaffolding to place blocks", function()
     if isGridEnabled then
-        isGridEnabled = false
+        isGridEnabled = true
         pcall(function()
             game.Workspace.PlayerAircraft[game.Players.LocalPlayer.Name].GridWall:Destroy()
         end)
